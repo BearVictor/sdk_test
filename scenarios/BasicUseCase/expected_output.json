@@ -1,0 +1,18 @@
+{
+	1: { callback_name: OnConfigDataAvailable,
+		 info: { url: "******", mfg_id: "******", device_id: "******", hash: "******", geo_code: "global", lat: -74.522, lng: 40.537 }
+	},
+	2: { callback_name: OnGenresAvailable,
+		 genres: { genres: [ { id: 1, name: "Adult Contemporary", }, { id: 2, name: "Classical", }, { id: 3, name: "Country", }, { id: 4, name: "Family", }, { id: 5, name: "Hip Hop/Urban", }, { id: 6, name: "Jazz/Blues", }, { id: 7, name: "News/Talk", }, { id: 8, name: "Oldies", }, { id: 9, name: "R&B", }, { id: 10, name: "Religious", }, { id: 11, name: "Rock", }, { id: 12, name: "Spanish", }, { id: 13, name: "Sports", }, { id: 14, name: "The Decades", }, { id: 15, name: "Top 40/Pop", }, { id: 16, name: "World/Variety", }, { id: 17, name: "Comedy", }, { id: 18, name: "Public Radio", }, { id: 19, name: "Other", }, ] }
+	},
+v3.0.0
+	3: { callback_name: OnMessageCodeAvailable,
+		 message code: "Data Services enabled by CONRAD"
+	},
+	4: { callback_name: OnMessageCodeAvailable,
+		 message code: "Live data enabled by CONRAD"
+	},
+	5: { callback_name: OnBroadcastsAvailable,
+		 broadcasts: { broadcasts: [ { isAnalogValid: 0, isHDRadioValid: 1, isDabValid: 0, broadcastId: "", country: "", freqKHz: 102700, band: " ", channel_sid: 0, dab_channel: "", piCode: "", ecc: "", stationId: "", countryCode: "", location: "", eid: "", sid: "", scids: "", broadcastData: { name: "”NEW 102.7"", slogan: "", stationId: "", contentId: "", languages: [ ], callSign: "”WNEW”", translator: "", enableThumbs: 0, enableShare: 0, format: "", description: "", longDescription: "", logoURL: "", logoURLHiRes: "", sfOnIconURL: "", sfOffIconURL: "", sfOnIconURLWide: "", sfOffIconURLWide: "", mqURI: "", mqExchange: "", mqKey: "", sortKey: "", genreIds: [ ], hasLiveData: 0, useLiveUnverified: 0, email: [ ], urls: { website: [ ], facebook: [ ], twitter: [ ] }, phone: [ ], sms: [ ], streams: [ ] } }, { isAnalogValid: 0, isHDRadioValid: 1, isDabValid: 0, broadcastId: "", country: "", freqKHz: 88300, band: " ", channel_sid: 0, dab_channel: "", piCode: "", ecc: "", stationId: "", countryCode: "", location: "", eid: "", sid: "", scids: "", broadcastData: { name: ""Station name 2"", slogan: "", stationId: "", contentId: "", languages: [ ], callSign: "WBGO-FM"", translator: "", enableThumbs: 0, enableShare: 0, format: "", description: "", longDescription: "", logoURL: "", logoURLHiRes: "", sfOnIconURL: "", sfOffIconURL: "", sfOnIconURLWide: "", sfOffIconURLWide: "", mqURI: "", mqExchange: "", mqKey: "", sortKey: "", genreIds: [ ], hasLiveData: 0, useLiveUnverified: 0, email: [ ], urls: { website: [ ], facebook: [ ], twitter: [ ] }, phone: [ ], sms: [ ], streams: [ ] } }, { isAnalogValid: 0, isHDRadioValid: 1, isDabValid: 0, broadcastId: "", country: "", freqKHz: 88700, band: " ", channel_sid: 0, dab_channel: "", piCode: "", ecc: "", stationId: "", countryCode: "", location: "", eid: "", sid: "", scids: "", broadcastData: { name: "", slogan: "", stationId: "", contentId: "", languages: [ ], callSign: "", translator: "", enableThumbs: 0, enableShare: 0, format: "", description: "", longDescription: "", logoURL: "", logoURLHiRes: "", sfOnIconURL: "", sfOffIconURL: "", sfOnIconURLWide: "", sfOffIconURLWide: "", mqURI: "", mqExchange: "", mqKey: "", sortKey: "", genreIds: [ ], hasLiveData: 0, useLiveUnverified: 0, email: [ ], urls: { website: [ ], facebook: [ ], twitter: [ ] }, phone: [ ], sms: [ ], streams: [ ] } }, ] }
+	},
+	}
