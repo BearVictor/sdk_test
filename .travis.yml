@@ -4,4 +4,4 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  — python run_test_python_sdk.py
+  — pytest
