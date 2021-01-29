@@ -6,7 +6,7 @@ All callback are save in delegate_output.json
 import csv
 import time
 import sys
-sys.path.append("..")
+sys.path.append("../../sdk_python/lib")
 import cradpy
 
 
