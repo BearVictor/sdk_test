@@ -1,0 +1,2 @@
+start,get_version,reg_location,reg_program_list,output_json
+40.537|-74.522|global|Tqx3GqbbaA8|FFFF03|https://api.sandbox.cnrd.io|495c29c02be41d6817be3ba3,,40.537|-74.522,40.537;-74.522|True;0;102700;0;True;30586;”WNEW”;”WNEW”;25442;658;40.74842;-73.98569;”NEW 102.7"|True;0;88300;0;True;22518;”WBGO";WBGO-FM";25442;658;40.74842;-73.98569;"Station name 2"|True;0;88700;0;False;33652;"WRSU",excepted_data/expected_basic_use_case.json
