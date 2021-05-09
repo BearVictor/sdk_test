@@ -1,0 +1,122 @@
+{
+  "ConfigDataAvailableData": {
+    "device_id": "*****",
+    "geo_code": "global",
+    "hash": "",
+    "lat": -74.522,
+    "lng": 40.537,
+    "mfg_id": "*****",
+    "url": "*******"
+  },
+  "GenresAvailableData": {
+    "genres": [
+      {
+        "id": 1,
+        "name": "Adult Contemporary",
+        "subGenres": []
+      },
+      {
+        "id": 2,
+        "name": "Classical",
+        "subGenres": []
+      },
+      {
+        "id": 3,
+        "name": "Country",
+        "subGenres": []
+      },
+      {
+        "id": 4,
+        "name": "Family",
+        "subGenres": []
+      },
+      {
+        "id": 5,
+        "name": "Hip Hop/Urban",
+        "subGenres": []
+      },
+      {
+        "id": 6,
+        "name": "Jazz/Blues",
+        "subGenres": []
+      },
+      {
+        "id": 7,
+        "name": "News/Talk",
+        "subGenres": []
+      },
+      {
+        "id": 8,
+        "name": "Oldies",
+        "subGenres": []
+      },
+      {
+        "id": 9,
+        "name": "R&B",
+        "subGenres": []
+      },
+      {
+        "id": 10,
+        "name": "Religious",
+        "subGenres": []
+      },
+      {
+        "id": 11,
+        "name": "Rock",
+        "subGenres": []
+      },
+      {
+        "id": 12,
+        "name": "Spanish",
+        "subGenres": []
+      },
+      {
+        "id": 13,
+        "name": "Sports",
+        "subGenres": []
+      },
+      {
+        "id": 14,
+        "name": "The Decades",
+        "subGenres": []
+      },
+      {
+        "id": 15,
+        "name": "Top 40/Pop",
+        "subGenres": []
+      },
+      {
+        "id": 16,
+        "name": "World/Variety",
+        "subGenres": []
+      },
+      {
+        "id": 17,
+        "name": "Comedy",
+        "subGenres": []
+      },
+      {
+        "id": 18,
+        "name": "Public Radio",
+        "subGenres": []
+      },
+      {
+        "id": 19,
+        "name": "Other",
+        "subGenres": []
+      }
+    ]
+  },
+  "LeEventInfoAvailableData": {
+    "le_event_id": "388515010",
+    "response_str": ""
+  },
+  "MessageCodeAvailableData": {
+    "code": 5
+  },
+  "LeEventsAvailableData": {
+    "artist_name": "",
+    "genre_id": 10,
+    "response_str": "{\"cursor\": {\"current\": \"LTMxODYyMTUxNTE5Njc1MjkxNjcsMA==\", \"start\": \"LTMxODYyMTUxNTE5Njc1MjkxNjcsMA==\"}, \"results\": {\"events\": {\"copyright\": \"Copyright 2019 DTS Connected Radio\", \"event\": [{\"leEventId\": \"368616369\", \"distance\": \"31.5\", \"name\": \"Lauren Daigle\", \"genreIds\": [10], \"types\": [\"Concerts - Religious\"], \"schedule\": {\"leVenueId\": \"5482\", \"eventTime\": \"19:32:00\", \"dates\": {\"start\": \"2021-03-19\", \"end\": \"2021-03-19\"}, \"bookingInfo\": {\"bookingLink\": [{\"bookingURL\": \"https://ticketmaster.evyy.net/c/266168/271177/4272?u=https%3A%2F%2Fwww.ticketmaster.com%2Flauren-daigle-new-york-new-york-03-19-2021%2Fevent%2F3B00572BF5972DF0\", \"provider\": \"ticketmasterV2\", \"price\": {\"value\": \"29.50\", \"currency\": \"USD\"}}, {\"bookingURL\": \"http://www.stubhub.com/lauren-daigle-tickets-lauren-daigle-new-york-madison-square-garden-3-19-2021/event/104380131/\", \"provider\": \"stubhub\", \"price\": {\"value\": \"2000.00\", \"currency\": \"USD\"}}, {\"bookingURL\": \"https://www.ticketcity.com/new-york-city-tickets/madison-square-garden-tickets/lauren-daigle-(rescheduled-from-6252020)-mar-19-2021-3260361.html?aid=2658\", \"provider\": \"ticketcity\", \"price\": {\"value\": \"45.00\", \"currency\": \"USD\"}}, {\"bookingURL\": \"https://www.tickpick.com/buy-lauren-daigle-johnnyswim-tickets-madison-square-garden-6-25-20-7PM/4179304/\", \"provider\": \"tickpick\", \"price\": {\"value\": \"52.00\", \"currency\": \"USD\"}}]}}}, {\"leEventId\": \"398587252\", \"distance\": \"33.5\", \"name\": \"Brooklyn Comes Alive\", \"genreIds\": [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 14, 15, 16, 19], \"types\": [\"Festivals & Fairs - Music - All Genres\"], \"schedule\": {\"leVenueId\": \"1203097\", \"eventTime\": \"16:00:00\", \"dates\": {\"start\": \"2021-03-13\", \"end\": \"2021-03-13\"}, \"bookingInfo\": {\"bookingLink\": [{\"bookingURL\": \"https://eventseeker.com/tickets/eb-86382316835\", \"provider\": \"eventseeker\", \"price\": {\"value\": \"65.0\", \"currency\": \"USD\"}}]}}}, {\"leEventId\": \"395713501\", \"distance\": \"43.3\", \"name\": \"Phil Keaggy\", \"genreIds\": [10], \"types\": [\"Concerts - Religious\"], \"schedule\": {\"leVenueId\": \"323300\", \"eventTime\": \"20:00:00\", \"dates\": {\"start\": \"2021-03-12\", \"end\": \"2021-03-12\"}, \"bookingInfo\": {\"bookingLink\": [{\"bookingURL\": \"https://www.ticketcity.com/philadelphia-tickets/sellersville-theatre-1894-tickets/phil-keaggy-mar-12-2021-3501482.html?aid=2658\", \"provider\": \"ticketcity\", \"price\": {\"value\": \"65.00\", \"currency\": \"USD\"}}, {\"bookingURL\": \"http://www.stubhub.com/phil-keaggy-sellersville-tickets-3-12-2021/event/104581307/\", \"provider\": \"stubhub\"}]}}}]}, \"venues\": {\"copyright\": \"Copyright 2019 DTS Connected Radio\", \"venue\": []}}}"
+  }
+}

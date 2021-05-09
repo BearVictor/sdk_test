@@ -1,0 +1,547 @@
+{
+  "ConfigDataAvailable": {
+    "device_id": "*****",
+    "geo_code": "global",
+    "hash": "",
+    "lat": -74.522,
+    "lng": 40.537,
+    "mfg_id": "*****",
+    "url": "*******"
+  },
+  "GenresAvailable": {
+    "genres": [
+      {
+        "id": 1,
+        "name": "Adult Contemporary",
+        "subGenres": []
+      },
+      {
+        "id": 2,
+        "name": "Classical",
+        "subGenres": []
+      },
+      {
+        "id": 3,
+        "name": "Country",
+        "subGenres": []
+      },
+      {
+        "id": 4,
+        "name": "Family",
+        "subGenres": []
+      },
+      {
+        "id": 5,
+        "name": "Hip Hop/Urban",
+        "subGenres": []
+      },
+      {
+        "id": 6,
+        "name": "Jazz/Blues",
+        "subGenres": []
+      },
+      {
+        "id": 7,
+        "name": "News/Talk",
+        "subGenres": []
+      },
+      {
+        "id": 8,
+        "name": "Oldies",
+        "subGenres": []
+      },
+      {
+        "id": 9,
+        "name": "R&B",
+        "subGenres": []
+      },
+      {
+        "id": 10,
+        "name": "Religious",
+        "subGenres": []
+      },
+      {
+        "id": 11,
+        "name": "Rock",
+        "subGenres": []
+      },
+      {
+        "id": 12,
+        "name": "Spanish",
+        "subGenres": []
+      },
+      {
+        "id": 13,
+        "name": "Sports",
+        "subGenres": []
+      },
+      {
+        "id": 14,
+        "name": "The Decades",
+        "subGenres": []
+      },
+      {
+        "id": 15,
+        "name": "Top 40/Pop",
+        "subGenres": []
+      },
+      {
+        "id": 16,
+        "name": "World/Variety",
+        "subGenres": []
+      },
+      {
+        "id": 17,
+        "name": "Comedy",
+        "subGenres": []
+      },
+      {
+        "id": 18,
+        "name": "Public Radio",
+        "subGenres": []
+      },
+      {
+        "id": 19,
+        "name": "Other",
+        "subGenres": []
+      }
+    ]
+  },
+  "MessageCodeAvailable": [
+    {
+      "code": 5
+    },
+    {
+      "code": 5
+    }
+  ],
+  "BroadcastsAvailable": {
+    "broadcasts": [
+      {
+        "band": "FM",
+        "broadcastData": {
+          "callSign": "HD",
+          "contentId": "",
+          "description": "Fault Tolerance Vector with Matching CanRad Data",
+          "email": null,
+          "enableShare": true,
+          "enableThumbs": true,
+          "format": "music",
+          "genreIds": 6,
+          "hasLiveData": false,
+          "languages": "en",
+          "logoURL": "https://alt.dev.canradtest.com/station_info/99.5-HD1/626e7bdcd7aa2293ae301f431e18e2a2.png",
+          "logoURLHiRes": "https://alt.dev.canradtest.com/station_info/99.5-HD1/b2f66130519618d56f95eebcb735637c.png",
+          "longDescription": "The Vector is: IB_FMr440_e1wfr1275, and the CanRad data matches the vector",
+          "mqExchange": "",
+          "mqKey": "",
+          "mqURI": "",
+          "name": "HD -FM",
+          "phone": null,
+          "sfOffIconURL": "",
+          "sfOffIconURLWide": "",
+          "sfOnIconURL": "",
+          "sfOnIconURLWide": "",
+          "slogan": "MPS",
+          "sms": null,
+          "sortKey": "",
+          "stationId": "",
+          "streams": {
+            "bitrate": "",
+            "format": "",
+            "preroll": "",
+            "sampleRate": "",
+            "url": ""
+          },
+          "translator": "",
+          "urls": null,
+          "useLiveUnverified": false
+        },
+        "broadcastId": "00022",
+        "channel_sid": 0,
+        "country": "US",
+        "countryCode": "658",
+        "dab_channel": "",
+        "ecc": "",
+        "eid": "",
+        "freqKHz": 99500,
+        "isAnalogValid": false,
+        "isDabValid": false,
+        "isHDRadioValid": true,
+        "location": "39.185,-76.806",
+        "piCode": "",
+        "scids": "",
+        "sid": "",
+        "stationId": "21"
+      },
+      {
+        "band": "FM",
+        "broadcastData": {
+          "callSign": "HD",
+          "contentId": "",
+          "description": "Fault Tolerance Vector with Matching CanRad Data",
+          "email": null,
+          "enableShare": true,
+          "enableThumbs": true,
+          "format": "other",
+          "genreIds": 0,
+          "hasLiveData": false,
+          "languages": "en",
+          "logoURL": "https://alt.dev.canradtest.com/station_info/99.5-HD2/b2f66130519618d56f95eebcb735637c.png",
+          "logoURLHiRes": "https://alt.dev.canradtest.com/station_info/99.5-HD2/b02cb5dd5290bd91334ffda31e0d5ddb.png",
+          "longDescription": "The Vector is: IB_FMr440_e1wfr1275, and the CanRad data matches the vector",
+          "mqExchange": "",
+          "mqKey": "",
+          "mqURI": "",
+          "name": "HD -FM",
+          "phone": null,
+          "sfOffIconURL": "",
+          "sfOffIconURLWide": "",
+          "sfOnIconURL": "",
+          "sfOnIconURLWide": "",
+          "slogan": "SPS1",
+          "sms": null,
+          "sortKey": "",
+          "stationId": "",
+          "streams": {
+            "bitrate": "",
+            "format": "",
+            "preroll": "",
+            "sampleRate": "",
+            "url": ""
+          },
+          "translator": "",
+          "urls": null,
+          "useLiveUnverified": false
+        },
+        "broadcastId": "00023",
+        "channel_sid": 1,
+        "country": "US",
+        "countryCode": "658",
+        "dab_channel": "",
+        "ecc": "",
+        "eid": "",
+        "freqKHz": 99500,
+        "isAnalogValid": false,
+        "isDabValid": false,
+        "isHDRadioValid": true,
+        "location": "39.185,-76.806",
+        "piCode": "",
+        "scids": "",
+        "sid": "",
+        "stationId": "21"
+      },
+      {
+        "band": "FM",
+        "broadcastData": {
+          "callSign": "WBAD",
+          "contentId": "",
+          "description": "No Vector",
+          "email": null,
+          "enableShare": true,
+          "enableThumbs": true,
+          "format": "music",
+          "genreIds": 1,
+          "hasLiveData": true,
+          "languages": "en",
+          "logoURL": "",
+          "logoURLHiRes": "",
+          "longDescription": "This Frequency does not have RF Signal",
+          "mqExchange": "",
+          "mqKey": "",
+          "mqURI": "",
+          "name": "WBAD",
+          "phone": null,
+          "sfOffIconURL": "",
+          "sfOffIconURLWide": "",
+          "sfOnIconURL": "",
+          "sfOnIconURLWide": "",
+          "slogan": "No Vector Slogan",
+          "sms": null,
+          "sortKey": "",
+          "stationId": "",
+          "streams": null,
+          "translator": "",
+          "urls": null,
+          "useLiveUnverified": false
+        },
+        "broadcastId": "00053",
+        "channel_sid": 0,
+        "country": "US",
+        "countryCode": "658",
+        "dab_channel": "",
+        "ecc": "",
+        "eid": "",
+        "freqKHz": 100300,
+        "isAnalogValid": false,
+        "isDabValid": false,
+        "isHDRadioValid": true,
+        "location": "36.8,-78.0",
+        "piCode": "",
+        "scids": "",
+        "sid": "",
+        "stationId": "99999"
+      },
+      {
+        "band": "FM",
+        "broadcastData": {
+          "callSign": "",
+          "contentId": "",
+          "description": "",
+          "email": null,
+          "enableShare": false,
+          "enableThumbs": false,
+          "format": "",
+          "genreIds": null,
+          "hasLiveData": false,
+          "languages": null,
+          "logoURL": "",
+          "logoURLHiRes": "",
+          "longDescription": "",
+          "mqExchange": "",
+          "mqKey": "",
+          "mqURI": "",
+          "name": "",
+          "phone": null,
+          "sfOffIconURL": "",
+          "sfOffIconURLWide": "",
+          "sfOnIconURL": "",
+          "sfOnIconURLWide": "",
+          "slogan": "",
+          "sms": null,
+          "sortKey": "",
+          "stationId": "",
+          "streams": null,
+          "translator": "",
+          "urls": null,
+          "useLiveUnverified": false
+        },
+        "broadcastId": "",
+        "channel_sid": 0,
+        "country": "",
+        "countryCode": "",
+        "dab_channel": "",
+        "ecc": "",
+        "eid": "",
+        "freqKHz": 87000,
+        "isAnalogValid": false,
+        "isDabValid": false,
+        "isHDRadioValid": true,
+        "location": "",
+        "piCode": "",
+        "scids": "",
+        "sid": "",
+        "stationId": ""
+      },
+       {"band": "FM",
+                 "broadcastData": {"callSign": "WABF",
+                                   "contentId": "",
+                                   "description": "",
+                                   "email": null,
+                                   "enableShare": true,
+                                   "enableThumbs": true,
+                                   "format": "",
+                                   "genreIds": 7,
+                                   "hasLiveData": true,
+                                   "languages": "en",
+                                   "logoURL": "https://alt.dev.canradtest.com/station_info/98.3-HD1/c9641b8a6f147401ad535bf9794d8959.jpg",
+                                   "logoURLHiRes": "https://alt.dev.canradtest.com/station_info/98.3-HD1/32b31963d944d3bdf1b24e5218f73e2c.jpg",
+                                   "longDescription": "",
+                                   "mqExchange": "live",
+                                   "mqKey": "TRAVIS.broadcast.00027",
+                                   "mqURI": "amqps://canradtest:canrad123@amqps.dev.canradtest.com/",
+                                   "name": "QABF",
+                                   "phone": null,
+                                   "sfOffIconURL": "",
+                                   "sfOffIconURLWide": "",
+                                   "sfOnIconURL": "",
+                                   "sfOnIconURLWide": "",
+                                   "slogan": "HD-1 Slogan for HMI-4",
+                                   "sms": null,
+                                   "sortKey": "",
+                                   "stationId": "",
+                                   "streams": null,
+                                   "translator": "",
+                                   "urls": null,
+                                   "useLiveUnverified": false},
+                 "broadcastId": "00027",
+                 "channel_sid": 0,
+                 "country": "US",
+                 "countryCode": "658",
+                 "dab_channel": "",
+                 "ecc": "",
+                 "eid": "",
+                 "freqKHz": 98300,
+                 "isAnalogValid": false,
+                 "isDabValid": false,
+                 "isHDRadioValid": true,
+                 "location": "39.185, -76.806",
+                 "piCode": "",
+                 "scids": "",
+                 "sid": "",
+                 "stationId": "99994"},
+                {"band": "FM",
+                 "broadcastData": {"callSign": "WWMX",
+                                   "contentId": "",
+                                   "description": "",
+                                   "email": null,
+                                   "enableShare": true,
+                                   "enableThumbs": true,
+                                   "format": "",
+                                   "genreIds": 1,
+                                   "hasLiveData": true,
+                                   "languages": "en",
+                                   "logoURL": "https://alt.dev.canradtest.com/station_info/97.9-HD1/fdf8869feb6d46134ad6baead43d00a4.jpg",
+                                   "logoURLHiRes": "https://alt.dev.canradtest.com/station_info/97.9-HD1/079a05e2e748dfa08814e2489e987eca.png",
+                                   "longDescription": "",
+                                   "mqExchange": "live",
+                                   "mqKey": "TRAVIS.broadcast.00011",
+                                   "mqURI": "amqps://canradtest:canrad123@amqps.dev.canradtest.com/",
+                                   "name": "MIX 106",
+                                   "phone": null,
+                                   "sfOffIconURL": "",
+                                   "sfOffIconURLWide": "",
+                                   "sfOnIconURL": "",
+                                   "sfOnIconURLWide": "",
+                                   "slogan": "MIX 106.5 on 97.9",
+                                   "sms": null,
+                                   "sortKey": "",
+                                   "stationId": "",
+                                   "streams": null,
+                                   "translator": "",
+                                   "urls": null,
+                                   "useLiveUnverified": false},
+                 "broadcastId": "00011",
+                 "channel_sid": 0,
+                 "country": "US",
+                 "countryCode": "658",
+                 "dab_channel": "",
+                 "ecc": "",
+                 "eid": "",
+                 "freqKHz": 97900,
+                 "isAnalogValid": false,
+                 "isDabValid": false,
+                 "isHDRadioValid": true,
+                 "location": "39.185,-76.806",
+                 "piCode": "A90F",
+                 "scids": "",
+                 "sid": "",
+                 "stationId": "WWMX"}
+    ]
+  },
+  "ImagesAvailable": {
+    "images": [
+      {
+        "source": {
+          "image_id": {
+            "type": "Default",
+            "id": ""
+          },
+          "freqKHz": 0,
+          "channelSid": 0
+        },
+        "images_list": [
+          {
+            "type": "Logo",
+            "image": {
+              "image size": 8367,
+              "image_type": "PNG"
+            }
+          }
+        ]
+      },
+      {
+        "source": {
+          "image_id": {
+            "type": "BroadcastId",
+            "id": "00022"
+          },
+          "freqKHz": 0,
+          "channelSid": 0
+        },
+        "images_list": [
+          {
+            "type": "Logo",
+            "image": {
+              "image size": 8367,
+              "image_type": "PNG"
+            }
+          }
+        ]
+      },
+      {
+        "source": {
+          "image_id": {
+            "type": "BroadcastId",
+            "id": "00023"
+          },
+          "freqKHz": 0,
+          "channelSid": 0
+        },
+        "images_list": [
+          {
+            "type": "Logo",
+            "image": {
+              "image size": 8367,
+              "image_type": "PNG"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "LiveDataAvailable": {
+    "live_data": {
+      "broadcastId": "00027",
+      "id": "98303",
+      "type": "music",
+      "duration": 0,
+      "musicData": {
+        "title": "HMI-4 HD1 Title 2",
+        "album": "HMI-4 HD1 Album 2",
+        "artist": "HMI-4 HD1 Artist 2",
+        "enableThumbs": 1,
+        "enableShare": 1,
+        "conradArtistId": "",
+        "conradTrackId": "",
+        "conradAlbumId": "",
+        "images": [
+          {
+            "type": "album",
+            "isDefault": 1,
+            "url": "https://alt.dev.canradtest.com/livedata_info/98.3-HD1/6cda2bddd2cb8e92086ed00a13828636.png",
+            "urlHiRes": "https://alt.dev.canradtest.com/livedata_info/98.3-HD1/434e1eba11875f9905ccdda1a062bd2b.png"
+          }
+        ],
+        "genreIds": [
+          0
+        ]
+      },
+      "nmpData": {
+        "title": "",
+        "program": "",
+        "subject": "",
+        "enableThumbs": 1,
+        "enableShare": 1,
+        "conradArtistId": "",
+        "conradTrackId": "",
+        "images": []
+      },
+      "adData": [
+        {
+          "type": "sms",
+          "data": [
+            {
+              "type": "sms",
+              "target": "333-444-5555",
+              "content": "YES",
+              "text": [
+                "Text to 98.3 HD1"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

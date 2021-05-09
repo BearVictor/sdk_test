@@ -1,0 +1,2 @@
+start,get_le_data,search_le,output_json
+40.537|-74.522|global|CONRAD_DEVICE_ID|CONRAD_MFG|CONRAD_HOST|CONRAD_AUTH_HASH,,40.537|-74.522|genre||10|||0|0|0||0|0,scenarios/excepted_data/expected_get_search_le.json
