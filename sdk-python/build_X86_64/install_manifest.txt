@@ -1,1 +1,0 @@
-/home/iryna/workspace/conrad-sdk/tests/functional-tests/sdk-python/lib/cradpy.cpython-36m-x86_64-linux-gnu.so

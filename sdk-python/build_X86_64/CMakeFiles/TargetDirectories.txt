@@ -1,7 +1,0 @@
-/home/iryna/workspace/conrad-sdk/tests/functional-tests/sdk-python/build_X86_64/CMakeFiles/install/strip.dir
-/home/iryna/workspace/conrad-sdk/tests/functional-tests/sdk-python/build_X86_64/CMakeFiles/edit_cache.dir
-/home/iryna/workspace/conrad-sdk/tests/functional-tests/sdk-python/build_X86_64/CMakeFiles/cradpy.dir
-/home/iryna/workspace/conrad-sdk/tests/functional-tests/sdk-python/build_X86_64/CMakeFiles/rebuild_cache.dir
-/home/iryna/workspace/conrad-sdk/tests/functional-tests/sdk-python/build_X86_64/CMakeFiles/list_install_components.dir
-/home/iryna/workspace/conrad-sdk/tests/functional-tests/sdk-python/build_X86_64/CMakeFiles/install/local.dir
-/home/iryna/workspace/conrad-sdk/tests/functional-tests/sdk-python/build_X86_64/CMakeFiles/install.dir
