@@ -131,6 +131,10 @@ struct ConnectedRadioDelegateWrap : public crad::ConnectedRadioDelegate {
   void OnAcrFingerprintIdentified (const crad::ACR_META_DATA_T &acr_metadata) override {
     PYBIND11_OVERRIDE_PURE(void, ConnectedRadioDelegate, OnAcrFingerprintIdentified, acr_metadata); 
   }
+
+  void OnConfigSettingsChange (const std::bitset<8> &change_mask, const crad::CONFIG_DATA_T& config) override {
+    PYBIND11_OVERRIDE_PURE(void, ConnectedRadioDelegate, OnConfigSettingsChange, change_mask, config);
+  }
 };
 
 
@@ -155,7 +159,8 @@ void InitCradDelegateModule(py::module &m) {
     .def("OnMessageCodeAvailable",              &crad::ConnectedRadioDelegate::OnMessageCodeAvailable)
     .def("OnLocationInfoRequested",             &crad::ConnectedRadioDelegate::OnLocationInfoRequested)
     .def("OnAcrFingerprintIdentified",          &crad::ConnectedRadioDelegate::OnAcrFingerprintIdentified)
-  ;
+    .def("OnConfigSettingsChange",              &crad::ConnectedRadioDelegate::OnConfigSettingsChange )
+    ;
 }
 
 

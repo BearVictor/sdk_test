@@ -463,6 +463,12 @@ void InitCradDataModule(py::module &m) {
     .def_readwrite("score",                 &crad::ACR_META_DATA_T::score)
     .def_readwrite("music_data",            &crad::ACR_META_DATA_T::music_data)
   ;
+
+  py::class_<crad::CONFIG_DATA_T>(m, "CONFIG_DATA_T").def(py::init<>())
+      .def_readwrite("image_mode",                 &crad::CONFIG_DATA_T::image_mode)
+      .def_readwrite("db_path",                    &crad::CONFIG_DATA_T::db_path)
+      .def_readwrite("disable_live_data_download", &crad::CONFIG_DATA_T::disable_live_data_download)
+      ;
 }
 
 

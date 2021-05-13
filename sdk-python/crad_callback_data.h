@@ -63,7 +63,7 @@
 #define MESSAGE_CODE_AVAILABLE_CALLBACK               "OnMessageCodeAvailable"
 #define LOCATION_INFO_REQUESTED_CALLBACK              "OnLocationInfoRequested"
 #define ACR_FINGERPRINT_IDENTIFIED_CALLBACK           "OnAcrFingerprintIdentified"
-
+#define CONFIG_SETTINGS_CHANGE_CALLBACK               "OnConfigSettingsChange"
 
 struct RegisterDeviceAvailableCallbackData {
   crad::MFG_INFO_T info;
@@ -187,5 +187,11 @@ struct AcrFingerprintIdentifiedCallbackData {
   int counter;
 };
 
+struct OnConfigSettingsChangeCallbackData {
+  crad::CONFIG_DATA_T config;
+  std::bitset<8> change_mask;
+
+  int counter;
+};
 
 #endif  // CRAD_PYTHON_CRAD_CALLBACK_DATA_H

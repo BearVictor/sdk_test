@@ -72,6 +72,7 @@ class ConnectedRadioDelegateImpl : public crad::ConnectedRadioDelegate {
   void OnMessageCodeAvailable(const crad::CRAD_MESSAGE_CODES_T &code) override;
   void OnLocationInfoRequested() override;
   void OnAcrFingerprintIdentified(const crad::ACR_META_DATA_T &acr_metadata) override;
+  void OnConfigSettingsChange(const std::bitset<8> &change_mask, const crad::CONFIG_DATA_T& config) override;
 
   void RestartCallbackCounter();
   void ClearCallbacksList();
@@ -95,6 +96,7 @@ class ConnectedRadioDelegateImpl : public crad::ConnectedRadioDelegate {
   MessageCodeAvailableCallbackData              m_message_code_available;
   LocationInfoRequestedCallbackData             m_location_info_requested;
   AcrFingerprintIdentifiedCallbackData          m_acr_fingerprint_identified;
+  OnConfigSettingsChangeCallbackData            m_config_data_changed;
 
   std::vector<std::string> m_last_callbacks;
 
