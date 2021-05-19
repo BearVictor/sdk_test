@@ -1,0 +1,2 @@
+register_device,start,output_json
+CANRAD_HOST|CANRAD_MFG|CANRAD_MFG_SECRET|40.537|-74.522|"DTS Connected Radio"|"DTS"|"Test CREU"|"1.0"|"abcd12345"|"3.0.0",40.537|-74.522|global|CANRAD_DEVICE_ID|CANRAD_MFG|CANRAD_HOST|CANRAD_AUTH_HASH,scenarios/expected-data/use-case-0-device-registration.json

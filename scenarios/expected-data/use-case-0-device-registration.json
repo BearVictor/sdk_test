@@ -1,0 +1,183 @@
+{
+  "ConfigDataAvailable": {
+    "device_id": "*****",
+    "geo_code": "global",
+    "hash": "",
+    "lat": -74.522,
+    "lng": 40.537,
+    "mfg_id": "*****",
+    "url": "*******"
+  },
+  "GenresAvailable": {
+    "genres": [
+      {
+        "id": 1,
+        "name": "Adult Contemporary",
+        "subGenres": []
+      },
+      {
+        "id": 2,
+        "name": "Classical",
+        "subGenres": []
+      },
+      {
+        "id": 3,
+        "name": "Country",
+        "subGenres": []
+      },
+      {
+        "id": 4,
+        "name": "Family",
+        "subGenres": []
+      },
+      {
+        "id": 5,
+        "name": "Hip Hop/Urban",
+        "subGenres": []
+      },
+      {
+        "id": 6,
+        "name": "Jazz/Blues",
+        "subGenres": []
+      },
+      {
+        "id": 7,
+        "name": "News/Talk",
+        "subGenres": []
+      },
+      {
+        "id": 8,
+        "name": "Oldies",
+        "subGenres": []
+      },
+      {
+        "id": 9,
+        "name": "R&B",
+        "subGenres": []
+      },
+      {
+        "id": 10,
+        "name": "Religious",
+        "subGenres": []
+      },
+      {
+        "id": 11,
+        "name": "Rock",
+        "subGenres": []
+      },
+      {
+        "id": 12,
+        "name": "Spanish",
+        "subGenres": []
+      },
+      {
+        "id": 13,
+        "name": "Sports",
+        "subGenres": []
+      },
+      {
+        "id": 14,
+        "name": "The Decades",
+        "subGenres": []
+      },
+      {
+        "id": 15,
+        "name": "Top 40/Pop",
+        "subGenres": []
+      },
+      {
+        "id": 16,
+        "name": "World/Variety",
+        "subGenres": []
+      },
+      {
+        "id": 17,
+        "name": "Comedy",
+        "subGenres": []
+      },
+      {
+        "id": 18,
+        "name": "NPR",
+        "subGenres": []
+      },
+      {
+        "id": 19,
+        "name": "Other",
+        "subGenres": []
+      }
+    ]
+  },
+  "MessageCodeAvailable": [
+    {
+      "code": 5
+    },
+    {
+      "code": 5
+    }
+  ],
+  "ImagesAvailable": [
+    {
+      "images": {
+        "source": {
+          "image_id": {
+            "type": "Default",
+            "id": ""
+          },
+          "freqKHz": 0,
+          "channelSid": 0
+        },
+        "images_list": [
+          {
+            "type": "Logo",
+            "image": {
+              "image_size": 8367,
+              "image_type": "PNG"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "images": {
+        "source": {
+          "image_id": {
+            "type": "Default",
+            "id": ""
+          },
+          "freqKHz": 0,
+          "channelSid": 0
+        },
+        "images_list": [
+          {
+            "type": "Album",
+            "image": {
+              "image_size": 66558,
+              "image_type": "PNG"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "images": {
+        "source": {
+          "image_id": {
+            "type": "Default",
+            "id": ""
+          },
+          "freqKHz": 0,
+          "channelSid": 0
+        },
+        "images_list": [
+          {
+            "type": "Album",
+            "image": {
+              "image_size": 22682,
+              "image_type": "PNG"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
