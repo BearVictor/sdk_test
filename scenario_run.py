@@ -53,6 +53,6 @@ def scenarios_run(path: str, parameters_pack: int = 0) -> (dict, str):
     data_from_callbacks, data_with_same_key = crad.make_dict_from_callbacks(data_from_callbacks),\
                                      crad.make_dict_from_callbacks(data_with_same_key)
 
-    crad.combine_two_dict(data_from_callbacks,data_with_same_key)
+    crad.combine_two_dict(data_from_callbacks, data_with_same_key)
 
     return data_from_callbacks, expected_path

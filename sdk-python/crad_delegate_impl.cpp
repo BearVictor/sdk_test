@@ -32,6 +32,7 @@ ConnectedRadioDelegateImpl::ConnectedRadioDelegateImpl():
     m_message_code_available(),
     m_location_info_requested(),
     m_acr_fingerprint_identified(),
+    m_config_data_changed(),
     m_callback_counter(0) {
 }
 
@@ -180,11 +181,11 @@ void ConnectedRadioDelegateImpl::OnAcrFingerprintIdentified(const crad::ACR_META
   ++m_callback_counter;
 }
 
-void ConnectedRadioDelegateImpl::OnConfigSettingsChange(const std::bitset<8> &change_mask,
+void ConnectedRadioDelegateImpl::OnConfigSettingsChange(const std::bitset<crad::kConfigDataChangeMaskSize> &change_mask,
                                                         const crad::CONFIG_DATA_T& config) {
   m_config_data_changed.change_mask = change_mask;
   m_config_data_changed.config = config;
-  m_last_callbacks.push_back(ACR_FINGERPRINT_IDENTIFIED_CALLBACK);
+  m_last_callbacks.push_back(CONFIG_SETTINGS_CHANGE_CALLBACK);
   ++m_callback_counter;
 }
 
@@ -212,7 +213,7 @@ void ConnectedRadioDelegateImpl::ClearCallbacksList() {
   m_message_code_available                = MessageCodeAvailableCallbackData();
   m_location_info_requested               = LocationInfoRequestedCallbackData();
   m_acr_fingerprint_identified            = AcrFingerprintIdentifiedCallbackData();
-  m_config_data_changed                   = OnConfigSettingsChangeCallbackData();
+  m_config_data_changed                   = ConfigSettingsChangeCallbackData();
 
   m_last_callbacks.clear();
 }

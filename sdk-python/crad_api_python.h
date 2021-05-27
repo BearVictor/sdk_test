@@ -89,10 +89,15 @@ void InitCradAPIModule(py::module &m) {
     .def("GetLocalEventData",           &crad::ConnectedRadioAPI::GetLocalEventData)
     .def("SearchLocalEvents",           &crad::ConnectedRadioAPI::SearchLocalEvents)
     .def("GetImages",                   &crad::ConnectedRadioAPI::GetImages)
-#ifndef DEPRECATED_MARKED_FOR_REMOVAL_VER_2_3_0 // replaced by SetConfig/GetConfig APIs
+#ifndef DEPRECATED_MARKED_FOR_REMOVAL_VER_3_2_0
     .def("SetImageMode",                &crad::ConnectedRadioAPI::SetImageMode)
     .def("GetImageMode",                &crad::ConnectedRadioAPI::GetImageMode)
 #endif
+    .def("SetConfig",                   &crad::ConnectedRadioAPI::SetConfig)
+    .def("GetConfig",                   [](crad::ConnectedRadioAPI* this_api, crad::CONFIG_DATA_T& config) {
+                                            crad::CRAD_ERR_T res = this_api->GetConfig(config);
+                                            return std::make_tuple(res, config);
+                                        })
     .def("FactoryReset",                &crad::ConnectedRadioAPI::FactoryReset)
   ;
 }

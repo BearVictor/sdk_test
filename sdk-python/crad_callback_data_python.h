@@ -161,6 +161,12 @@ void InitCradCallbackDataModule(py::module &m) {
     .def_readwrite("acr_metadata",          &AcrFingerprintIdentifiedCallbackData::acr_metadata)
     .def_readwrite("counter",               &AcrFingerprintIdentifiedCallbackData::counter)
   ;
+
+  py::class_<ConfigSettingsChangeCallbackData>(m, "ConfigSettingsChangeCallbackData").def(py::init<>())
+    .def_readwrite("change_mask",          &ConfigSettingsChangeCallbackData::change_mask)
+    .def_readwrite("config",               &ConfigSettingsChangeCallbackData::config)
+    .def_readwrite("counter",              &ConfigSettingsChangeCallbackData::counter)
+  ;
 }
 
 
