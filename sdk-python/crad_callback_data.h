@@ -187,9 +187,9 @@ struct AcrFingerprintIdentifiedCallbackData {
   int counter;
 };
 
-struct OnConfigSettingsChangeCallbackData {
+struct ConfigSettingsChangeCallbackData {
   crad::CONFIG_DATA_T config;
-  std::bitset<8> change_mask;
+  std::bitset<crad::kConfigDataChangeMaskSize> change_mask;
 
   int counter;
 };
