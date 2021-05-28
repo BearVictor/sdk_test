@@ -71,7 +71,6 @@ def test_use_case_1_sdk_ip_vs_registered_data_matching():
     # assert expected_data.get('BroadcastsAvailable') == data_from_callbacks.get('BroadcastsAvailable')
 
 
-
 def test_use_case_2_matched_ip_stations_have_live_data():
     """
     This use case tests if SDK receives LiveData after stations with live data are matched with registered OTA stations

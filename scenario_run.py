@@ -45,14 +45,14 @@ def scenarios_run(path: str, parameters_pack: int = 0) -> (dict, str):
 
     time.sleep(crad.DELAY)
     crad.stop()
-    data_from_callbacks, data_with_same_key = crad.process_data_from_callback()
 
-    crad.clear()
-    crad.restart_callback_counter()
-
-    data_from_callbacks, data_with_same_key = crad.make_dict_from_callbacks(data_from_callbacks),\
-                                     crad.make_dict_from_callbacks(data_with_same_key)
-
-    crad.combine_two_dict(data_from_callbacks,data_with_same_key)
+    data_from_callbacks = crad.process_data_from_callback()
 
     return data_from_callbacks, expected_path
+
+
+if __name__ == '__main__':
+    # data_from_callbacks, expected_path = scenarios_run("scenarios/csv-scenarios/use-case-1-ip-vs-registered-data-matching.csv")
+    #"scenarios/csv-scenarios/use-case-0-device-registration.csv"
+    scenarios_run("scenarios/csv-scenarios/use-case-2-matched-ip-stations-have-live-data.csv")
+
