@@ -8,6 +8,8 @@ So in function created specific object and run function with correct parameters.
 import inspect
 import os
 import sys
+from copy import deepcopy
+
 sys.path.append("./sdk-python/lib")
 import cradpy
 
@@ -67,7 +69,6 @@ def make_pretty(list_of_lists: list) -> list:
                     pass
             value_dict[item[0]] = item[1]
         big_list.append(value_dict)
-
     return big_list
 
 
@@ -78,7 +79,6 @@ def make_dict_from_callbacks(data_from_callbacks: dict) -> dict:
     :return: dictionary without list objects
     """
     processed_dictionary = {}
-
     for key in data_from_callbacks.keys():
         value_dict = {}
         for value in data_from_callbacks[key]:
@@ -88,7 +88,6 @@ def make_dict_from_callbacks(data_from_callbacks: dict) -> dict:
                 continue
             value_dict[value[0]] = value[1]
         processed_dictionary[key] = value_dict
-
     return processed_dictionary
 
 
@@ -116,7 +115,7 @@ def get_attribute(name_class: str) -> list:
         name_class, lambda a: not (
             inspect.isroutine(a)))
     all_attributes = [list(a) for a in attributes if not (
-        a[0].startswith('__') and a[0].endswith('__') or "counter" in a[0])]
+            a[0].startswith('__') or a[0].endswith('__') or "counter" in a[0])]
     return all_attributes
 
 
@@ -127,28 +126,73 @@ def get_data_from_list(dictionary_data: dict) -> dict:
     :param dictionary_data: dict for verification
     :return: update dict
     """
-    for item in dictionary_data.values():
-        for tuple_data in item:
-            if isinstance(tuple_data[1], list):
-                for i in range(len(tuple_data[1])):
-                    tuple_data[1][i] = (get_attribute(tuple_data[1][i]))
-    return dictionary_data
+    data_from_list = {}
+    for i in dictionary_data:
+        dict2 = []
+        dict_img_avail = []
+        for j in dictionary_data[i]:
+            if i == 'ImagesAvailable':
+                dict_img_avail.append(special_condition_for_image_available(j))
+                data_from_list[i] = dict_img_avail
+            else:
+                dict2.append((main_dfs(j)))
+                data_from_list[i] = dict2
+    print('\n', data_from_list)
+    return data_from_list
 
 
-def special_condition_for_broadcastdata(all_attributes):
-    """
-    Callback return specific path to cradpy object,so we need take it
-    :param all_attributes: attribute from LastBroadcastsAvailableData callback
-    """
-    try:
-        if len(all_attributes[0][1]) > 0:
-            for i in range(len(all_attributes[0][1])):
-                all_attributes[0][1][i][1][1] = get_attribute(
-                    all_attributes[0][1][i][1][1])
-                all_attributes[0][1][i][1][1][28][1] = get_attribute(
-                    all_attributes[0][1][i][1][1][28][1])
-    except IndexError:
-        pass
+def obj_dfs(data):
+    current_list = []
+    variable_list = get_attribute(data)
+    for i in variable_list:
+        current_list.append(main_dfs(i))
+    return current_list
+
+
+def list_dfs(data):
+    current_list = []
+    for i in data:
+        current_list.append(main_dfs(i))
+    return current_list
+
+
+def dict_dfs(data):
+    current_list = []
+    for i in data.values():
+        current_list.append(main_dfs(i))
+    return current_list
+
+
+def main_dfs(data):
+    if isinstance(data, list) or isinstance(data, tuple):
+        return list_dfs(data)
+    elif isinstance(data, dict):
+        return dict_dfs(data)
+    elif isinstance(data, str) or isinstance(data, int) or isinstance(data, bool) or isinstance(data, float):
+        return data
+    else:
+        return obj_dfs(data)
+
+
+def special_condition_for_image_available(data):
+    if data[0] == 'images_list':
+        get_attr1 = get_attribute(data[1][0])
+        get_attr2 = get_attribute(get_attr1[0][1])
+        get_attr3 = get_attribute(get_attr1[1][1])
+        data[1][0] = get_attribute(data[1][0])
+        data[1][0][0][1] = get_attribute(data[1][0][0][1])
+        data[1][0][0][1][0][1] = len((get_attr2[0][1]))
+        data[1][0][0][1][1][1] = get_attribute(data[1][0][0][1][1][1])
+        data[1][0][0][1][1][1] = data[1][0][0][1][1][1][3]
+        data[1][0][1][1] = get_attr3[4]
+    else:
+        get_1 = get_attribute(data[1])
+        get_2 = get_attribute(get_1[2][1])
+        get_3 = get_attribute(get_2[1][1])
+        data[1] = get_attribute(data[1])
+        data[1][2][1] = get_attribute(data[1][2][1])
+        data[1][2][1][1][1] = get_3[7]
+    return data
 
 
 def combine_two_dict(first_dict: dict, second_dict: dict) -> dict:
@@ -160,11 +204,11 @@ def combine_two_dict(first_dict: dict, second_dict: dict) -> dict:
     """
     for key in first_dict.keys():
         if key in second_dict:
-            first_dict[key]=[first_dict.get(key), second_dict.get(key)]
+            first_dict[key] = [first_dict.get(key), second_dict.get(key)]
     return first_dict
 
 
-def is_keys(var_dict: dict ,key:str) -> bool :
+def is_keys(var_dict: dict, key: str) -> bool:
     """
     make verification: is key in dict
     """
@@ -191,14 +235,9 @@ def process_data_from_callback() -> dict:
             data_with_same_key.update({callback: all_attributes})
         scenario_callback.update({callback: all_attributes})
 
-    scenario_callback, data_with_same_key = get_data_from_list(scenario_callback), \
-                                           get_data_from_list(data_with_same_key)
-
-    if 'BroadcastsAvailable' in list_of_callback:
-        special_condition_for_broadcastdata(
-            scenario_callback["BroadcastsAvailable"])
-
-    return scenario_callback, data_with_same_key
+    #scenario_callback, data_with_same_key = get_data_from_list(scenario_callback), get_data_from_list(data_with_same_key)
+    scenario_callback = get_data_from_list(scenario_callback)
+    return scenario_callback
 
 
 def register_device(parameters: str):
