@@ -746,7 +746,7 @@ def get_images(parameters: str):
     if sdk_api.GetImages(image_list) != 0:
         print("Error in get_images function")
 
-
+#ifndef DEPRECATED_MARKED_FOR_REMOVAL_VER_3_2_0
 def get_image_mode(parameters: str):
     """
     Assign parameters to function
@@ -769,6 +769,40 @@ def set_image_mode(parameters: str):
     # following argument types are supported:
     mode = cradpy.IMAGE_MODE_T(parameters)
     if sdk_api.SetImageMode(mode) != 0:
+        print("Error in set_image_mode function")
+#endif
+
+
+def get_config(parameters: str):
+    """
+    Assign parameters to function
+    :param parameters: string with parameters
+    """
+    # TypeError: __init__(): incompatible constructor arguments. The
+    # following argument types are supported:
+    config_data = cradpy.CONFIG_DATA_T(parameters)
+    if sdk_api.GetConfig(config_data) != 0:
+        print("Error in get_image_mode function")
+
+
+def set_config(parameters: str):
+    """
+    Assign parameters to function
+    :param parameters: string with parameters
+    """
+    # TypeError: __init__(): incompatible constructor arguments. The
+    # following argument types are supported:
+
+    parameters_for_set_config = parameters.split(PARAMETERS_DELIMITER)
+    change_mask = cradpy.bitset(0xff)
+    config = cradpy.CONFIG_DATA_T()
+    mode_param = cradpy.eImageModeNone
+
+    config.image_mode = cradpy.IMAGE_MODE_T(mode_param)
+    config.db_path = parameters_for_set_config[2]
+    config.disable_live_data_download = bool(parameters_for_set_config[3])
+
+    if sdk_api.SetConfig(change_mask, config) != 0:
         print("Error in set_image_mode function")
 
 

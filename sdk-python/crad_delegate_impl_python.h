@@ -75,6 +75,7 @@ void InitCradDelegateImplModule(py::module &m) {
     .def("OnMessageCodeAvailable",              &ConnectedRadioDelegateImpl::OnMessageCodeAvailable) 
     .def("OnLocationInfoRequested",             &ConnectedRadioDelegateImpl::OnLocationInfoRequested) 
     .def("OnAcrFingerprintIdentified",          &ConnectedRadioDelegateImpl::OnAcrFingerprintIdentified)
+    .def("OnConfigSettingsChange",              &ConnectedRadioDelegateImpl::OnConfigSettingsChange)
     
     .def_readwrite("RegisterDeviceAvailable",           &ConnectedRadioDelegateImpl::m_register_device_available)
     .def_readwrite("ConfigDataAvailable",               &ConnectedRadioDelegateImpl::m_config_data_available)
@@ -91,10 +92,11 @@ void InitCradDelegateImplModule(py::module &m) {
     .def_readwrite("IpcPodcastLatestEpisodeAvailable",  &ConnectedRadioDelegateImpl::m_ipc_podcast_latest_episode_available)
     .def_readwrite("LeEventInfoAvailable",              &ConnectedRadioDelegateImpl::m_le_event_info_available)
     .def_readwrite("LeEventsAvailable",                 &ConnectedRadioDelegateImpl::m_le_events_available)
-    .def_readwrite("ImagesAvailable",                       &ConnectedRadioDelegateImpl::m_images_available)
+    .def_readwrite("ImagesAvailable",                   &ConnectedRadioDelegateImpl::m_images_available)
     .def_readwrite("MessageCodeAvailable",              &ConnectedRadioDelegateImpl::m_message_code_available)
     .def_readwrite("LocationInfoRequested",             &ConnectedRadioDelegateImpl::m_location_info_requested)
     .def_readwrite("AcrFingerprintIdentified",          &ConnectedRadioDelegateImpl::m_acr_fingerprint_identified)
+    .def_readwrite("ConfigSettingsChange",              &ConnectedRadioDelegateImpl::m_config_data_changed)
 
     .def_readwrite("CallbacksList",      &ConnectedRadioDelegateImpl::m_last_callbacks)
     

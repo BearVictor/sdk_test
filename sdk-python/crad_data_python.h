@@ -95,6 +95,7 @@ void InitCradDataModule(py::module &m) {
     .value("eGuide",                        crad::eLiveDataDisplayPurpose::eGuide)
     .value("eTuned",                        crad::eLiveDataDisplayPurpose::eTuned)
     .value("ePreset",                       crad::eLiveDataDisplayPurpose::ePreset)
+    .export_values();
   ;
 
   py::enum_<crad::REPORT_ACTION_TYPE_E>(m, "REPORT_ACTION_TYPE_E")
@@ -104,6 +105,7 @@ void InitCradDataModule(py::module &m) {
     .value("eReportActionTypeShare",        crad::REPORT_ACTION_TYPE_E::eReportActionTypeShare)
     .value("eReportActionTypeNav",          crad::REPORT_ACTION_TYPE_E::eReportActionTypeNav)
     .value("eReportActionTypeThumbs",       crad::REPORT_ACTION_TYPE_E::eReportActionTypeThumbs)
+    .export_values();
   ;
 
   py::class_<crad::ACTION_DATA_T>(m, "ACTION_DATA_T").def(py::init<>())
@@ -249,6 +251,7 @@ void InitCradDataModule(py::module &m) {
     .value("eImageTypeAlbum",               crad::eImageTypes::eImageTypeAlbum)
     .value("eImageTypeArtist",              crad::eImageTypes::eImageTypeArtist)
     .value("eImageTypeOther",               crad::eImageTypes::eImageTypeOther)
+    .export_values();
   ;
 
   py::enum_<crad::eImageIdTypes>(m, "eImageIdTypes")
@@ -259,6 +262,7 @@ void InitCradDataModule(py::module &m) {
     .value("eImageIdTypeHdRadio",           crad::eImageIdTypes::eImageIdTypeHdRadio)
     .value("eImageIdTypeDab",               crad::eImageIdTypes::eImageIdTypeDab)
     .value("eImageIdTypeACR",               crad::eImageIdTypes::eImageIdTypeACR)
+    .export_values();
   ;
 
   py::class_<crad::IMAGE_ID_T>(m, "IMAGE_ID_T").def(py::init<>())
@@ -280,6 +284,7 @@ void InitCradDataModule(py::module &m) {
     .value("eImageModeNone",                crad::IMAGE_MODE_T::eImageModeNone)
     .value("eImageModeStandard",            crad::IMAGE_MODE_T::eImageModeStandard)
     .value("eImageModeHighRes",             crad::IMAGE_MODE_T::eImageModeHighRes)
+    .export_values();
   ;
 
   py::class_<crad::IMAGE_SOURCE_DATA_T>(m, "IMAGE_SOURCE_DATA_T").def(py::init<>())
@@ -292,6 +297,7 @@ void InitCradDataModule(py::module &m) {
     .value("IMAGE_TYPE_UNKNOWN",            crad::CRAD_IMAGE_TYPE_T::IMAGE_TYPE_UNKNOWN)
     .value("IMAGE_TYPE_PNG",                crad::CRAD_IMAGE_TYPE_T::IMAGE_TYPE_PNG)
     .value("IMAGE_TYPE_JPG",                crad::CRAD_IMAGE_TYPE_T::IMAGE_TYPE_JPG)
+    .export_values();
   ;
 
   py::class_<crad::CRAD_IMAGE_T>(m, "CRAD_IMAGE_T").def(py::init<>())
@@ -469,7 +475,11 @@ void InitCradDataModule(py::module &m) {
       .def_readwrite("db_path",                    &crad::CONFIG_DATA_T::db_path)
       .def_readwrite("disable_live_data_download", &crad::CONFIG_DATA_T::disable_live_data_download)
       ;
-}
 
+  py::class_<std::bitset<crad::kConfigDataChangeMaskSize>>(m, "bitset")
+       .def(py::init<>())
+       .def(py::init<unsigned long long>())
+      ;
+}
 
 #endif  // CRAD_BOOST_PYTHON_CRAD_DATA_PYTHON_H_
